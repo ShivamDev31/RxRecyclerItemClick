@@ -13,7 +13,6 @@ import io.reactivex.subjects.PublishSubject
  */
 class ListAdapter : RecyclerView.Adapter<ListAdapter.ListHolder>() {
 
-
     private val clickSubject = PublishSubject.create<String>()
 
     private val items = listOf("Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7",
@@ -36,12 +35,12 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.ListHolder>() {
         return clickSubject
     }
 
-    inner class ListHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
+    inner class ListHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        private var itemText = itemView?.findViewById(R.id.tv_item_text) as TextView
+        private var itemText = itemView.findViewById(R.id.tv_item_text) as TextView
 
         init {
-            itemView?.setOnClickListener { _ ->
+            itemView.setOnClickListener { _ ->
                 clickSubject.onNext(items[layoutPosition])
             }
         }
