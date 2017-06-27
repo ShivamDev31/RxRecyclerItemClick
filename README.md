@@ -1,5 +1,9 @@
 **RxRecyclerItemClick**
 =================
+
+### Featured in
+[![AndroidDev Digest](https://img.shields.io/badge/AndroidDev%20Digest-%23147-blue.svg)]
+
 A sample project for my [Medium article](https://blog.mindorks.com/recyclerview-item-click-using-rxjava2-993fc0c78047) where I've explained how you can setup **RecyclerView** item clicks using **Rxjava2**. I've used **Kotlin** for this sample project. 
 
 ![](https://media.giphy.com/media/3oKIPht9ld5QvuJj6E/giphy.gif)
