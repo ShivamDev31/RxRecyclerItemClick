@@ -2,7 +2,7 @@
 =================
 
 ### Featured in
-[![AndroidDev Digest](https://img.shields.io/badge/AndroidDev%20Digest-%23147-blue.svg)]
+[![AndroidDev Digest](https://img.shields.io/badge/AndroidDev%20Digest-%23147-blue.svg)](https://www.androiddevdigest.com/digest-147/)
 
 A sample project for my [Medium article](https://blog.mindorks.com/recyclerview-item-click-using-rxjava2-993fc0c78047) where I've explained how you can setup **RecyclerView** item clicks using **Rxjava2**. I've used **Kotlin** for this sample project. 
 
