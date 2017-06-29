@@ -31,16 +31,14 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.ListHolder>() {
         return ListHolder(view)
     }
 
-    fun getClickListener(): Observable<String> {
-        return clickSubject
-    }
+    val clickEvent: Observable<String> = clickSubject
 
     inner class ListHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         private var itemText = itemView.findViewById(R.id.tv_item_text) as TextView
 
         init {
-            itemView.setOnClickListener { _ ->
+            itemView.setOnClickListener {
                 clickSubject.onNext(items[layoutPosition])
             }
         }

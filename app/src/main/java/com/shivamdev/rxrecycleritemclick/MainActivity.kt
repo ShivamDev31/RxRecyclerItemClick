@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupItemClick() {
-        subscribe = adapter.getClickListener()
+        subscribe = adapter.clickEvent
                 .subscribe({
                     Toast.makeText(this, "Clicked on $it", Toast.LENGTH_LONG).show()
                 })
